@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "username": "qutub ahmed",
+      "password_hash": "scrypt:32768:8:1$RQRxrcal5QZBqpk4$01dacea2f5d95b2af6087c5c38c24d92c8f2b68907af7aa38defac3ebedeed3c68086fda6bca6749619506de0102cd733567a828aa989390aa948b3aa117d1ec"
+    },
+    {
+      "username": "qutub ahmed khan",
+      "password_hash": "scrypt:32768:8:1$dROVUI03DC4MFzv4$9d1ad29e53634e8fbf48e1a8ec166d9978124d2cc18212b1c5ddf732410de16bb983cf01ef7c015f115f482cce97add8be95bcc015f4587319958095503b80be"
+    }
+  ],
+  "articles": [
+    {
+      "id": 2,
+      "title": "Python",
+      "content": "Python is so popular high-level programming panguage that is vastly use in computer programmngs and AI stuff too.",
+      "date_published": "2026-11-10 02:29:05",
+      "author": "qutub ahmed"
+    },
+    {
+      "id": 3,
+      "title": "Next.js",
+      "content": "Over the 16.x releases, we’ve introduced a new programming model that addresses many of the frustrations you've had with App Router from the start:\r\n\r\nIt brings fast initial loads, even for personalized pages\r\nIt gives server-rendered apps instant client navigations\r\nIt makes caching opt-in, declarative, and composable\r\nThis new programming model is called Cache Components, and it will become the default in Next.js 17.\r\n\r\nPrior to this release, we didn’t recommend it universally because there were some cases where it couldn’t achieve the same cost and performance guarantees as with the previous model.\r\n\r\nThis release includes key features that close those gaps.\r\n\r\nStarting with Next.js 16.4, we’re excited to recommend Cache Components as the best choice for every Next.js app.\r\n\r\nAs of today, all new apps created with create-next-app will have Cache Components enabled by default. Greenfield projects can enjoy all the benefits of the new model with no reservations.\r\n\r\nFor existing apps, we’ve been investing in better agentic tooling to help codebases migrate to the new model. The new next upgrade --agent command gives agents version-specific guidance on upgrading your app, and dedicated Skills help agents with any refactorings needed for you to adopt Cache Components.\r\n\r\nNext.js 16.4 also includes several out-of-the-box improvements for all Next.js apps, including less memory usage and disk size in dev, reduced compile times, smaller production bundles, and React 19.3.",
+      "date_published": "2026-11-10 02:38:18",
+      "author": "qutub ahmed khan"
+    }
+  ],
+  "next_article_id": 4
+}

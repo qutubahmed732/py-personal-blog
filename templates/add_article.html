@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Write an article · Ink &amp; Ideas{% endblock %}
+{% block content %}
+    <section class="form-panel">
+        <a class="back-link" href="{{ url_for('dashboard') }}">← Dashboard</a>
+        <p class="eyebrow">NEW STORY</p>
+        <h1>Write an article</h1>
+        <form method="post" class="content-form">
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" maxlength="160" required>
+            <label for="content">Your article</label>
+            <textarea id="content" name="content" rows="12" required></textarea>
+            <button class="button" type="submit">Publish article</button>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Log in · Ink &amp; Ideas{% endblock %}
+{% block content %}
+    <section class="form-panel auth-panel">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h1>Log in</h1>
+        <p class="muted">Sign in to manage your articles.</p>
+        <form method="post" class="content-form">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" value="{{ username|default('') }}" autocomplete="username" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+            <button class="button button-wide" type="submit">Log in</button>
+        </form>
+        <p class="form-note">New here? <a href="{{ url_for('register') }}">Create an account</a>.</p>
+    </section>
+{% endblock %}

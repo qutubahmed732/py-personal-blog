@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Sign up · Ink &amp; Ideas{% endblock %}
+{% block content %}
+    <section class="form-panel auth-panel">
+        <p class="eyebrow">JOIN THE COMMUNITY</p>
+        <h1>Create an account</h1>
+        <p class="muted">Sign up to publish and manage your own articles.</p>
+        <form method="post" class="content-form">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" minlength="3" maxlength="32"
+                   value="{{ username|default('') }}" autocomplete="username" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" minlength="8"
+                   autocomplete="new-password" required>
+            <label for="confirm_password">Confirm password</label>
+            <input id="confirm_password" name="confirm_password" type="password"
+                   minlength="8" autocomplete="new-password" required>
+            <button class="button button-wide" type="submit">Create account</button>
+        </form>
+        <p class="form-note">Already registered? <a href="{{ url_for('login') }}">Log in</a>.</p>
+    </section>
+{% endblock %}

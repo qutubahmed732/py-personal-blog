@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home · Ink &amp; Ideas{% endblock %}
+{% block content %}
+    <section class="hero">
+        <p class="eyebrow">PERSONAL BLOG</p>
+        <h1>Stories, notes, and ideas.</h1>
+        <p class="hero-copy">A collection of thoughts worth sharing.</p>
+    </section>
+    <section class="article-list" aria-label="Published articles">
+        {% for article in articles %}
+            <article class="article-card">
+                <p class="article-meta">{{ article.date_published }} <span>·</span> by {{ article.author }}</p>
+                <h2><a href="{{ url_for('article', article_id=article.id) }}">{{ article.title }}</a></h2>
+                <p class="article-excerpt">{{ article.content|truncate(220) }}</p>
+                <a class="read-link" href="{{ url_for('article', article_id=article.id) }}">Read article →</a>
+            </article>
+        {% else %}
+            <div class="empty-state">
+                <h2>No articles yet</h2>
+                <p>Sign in or create an account to publish the first one.</p>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}
