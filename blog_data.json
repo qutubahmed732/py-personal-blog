@@ -2,10 +2,6 @@
   "users": [
     {
       "username": "qutub ahmed",
-      "password_hash": "scrypt:32768:8:1$RQRxrcal5QZBqpk4$01dacea2f5d95b2af6087c5c38c24d92c8f2b68907af7aa38defac3ebedeed3c68086fda6bca6749619506de0102cd733567a828aa989390aa948b3aa117d1ec"
-    },
-    {
-      "username": "qutub ahmed khan",
       "password_hash": "scrypt:32768:8:1$dROVUI03DC4MFzv4$9d1ad29e53634e8fbf48e1a8ec166d9978124d2cc18212b1c5ddf732410de16bb983cf01ef7c015f115f482cce97add8be95bcc015f4587319958095503b80be"
     }
   ],
